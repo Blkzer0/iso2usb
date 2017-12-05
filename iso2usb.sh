@@ -13,7 +13,7 @@ lsblk
    read path
    echo "What is the iso path?:"
    read iso
-   dd bs=1M if=$iso of=$path iflag=fullblock oflag=direct status=progress
+   dd bs=1M if=$iso of=$path iflag=fullblock oflag=direct status=progress 
    sleep 1 
    echo "iso has been written to usb"
 
